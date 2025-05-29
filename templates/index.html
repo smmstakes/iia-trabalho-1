@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Recomendação - Produtos Locais</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: sans-serif;
+        }
+        #map-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        #sidebar {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            bottom: 10px; 
+            width: 380px;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: 1000;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: -3px 0 15px rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .form-section:last-child {
+            border-bottom: none;
+        }
+        .recommendation-item {
+            padding: 10px;
+            margin: 8px 0;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+        }
+        .product-checkbox-list {
+            max-height: 150px;
+            overflow-y: auto;
+            border: 1px solid #ced4da;
+            padding: 10px;
+            border-radius: .25rem;
+        }
+        .recommendation-form-inputs { display: none; } /* Inputs são escondidos por padrão e mostrados conforme o tipo de recomendação */
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <div id="map">{{ initial_map|safe }}</div> <div id="sidebar">
+            <h3 class="mb-3 text-center">Recomendações Locais</h3>
+            
+            <div class="form-section">
+                <label for="recommendation-type" class="form-label fw-bold">Tipo de Recomendação:</label>
+                <select id="recommendation-type" class="form-select mb-3" onchange="updateFormVisibility()">
+                    <option value="products" selected>Melhores Produtos (por aqui)</option>
+                    <option value="producers">Melhores Produtores (de um item)</option>
+                    <option value="producer-products">Melhores Produtos (de um produtor)</option>
+                </select>
+            </div>
+
+            <div id="form-products" class="recommendation-form-inputs">
+                <h5>Buscar Melhores Produtos</h5>
+                <div class="mb-3">
+                    <label class="form-label">Produtos Desejados (opcional):</label>
+                    <div class="product-checkbox-list">
+                        {% for product in products_list %}
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="product_filter" value="{{ product }}" id="product-filter-{{ loop.index }}">
+                            <label class="form-check-label" for="product-filter-{{ loop.index }}">{{ product }}</label>
+                        </div>
+                        {% else %}
+                        <p class="text-muted small">Nenhum produto disponível para filtro.</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="products-producer-select" class="form-label">Produtor (opcional):</label>
+                    <select id="products-producer-select" class="form-select" onchange="updateLocationOptions('products-producer-select', 'products-location-select')">
+                        <option value="">Todos os produtores</option>
+                        {% for producer in producers_list %}
+                            <option value="{{ producer }}">{{ producer }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="products-location-select" class="form-label">Região Administrativa (opcional, máx 1):</label>
+                    <select id="products-location-select" class="form-select">
+                        </select>
+                </div>
+                <div class="mb-3">
+                    <label for="products-organic-select" class="form-label">Orgânico:</label>
+                    <select id="products-organic-select" class="form-select">
+                        <option value="1">Sim</option>
+                        <option value="0" selected>Não</option> 
+                    </select>
+                </div>
+            </div>
+
+            <div id="form-producers" class="recommendation-form-inputs">
+                <h5>Buscar Melhores Produtores</h5>
+                <div class="mb-3">
+                    <label for="producers-single-product-select" class="form-label">Produto de Interesse (opcional):</label>
+                    <select id="producers-single-product-select" class="form-select">
+                        <option value="">Qualquer produto</option>
+                        {% for product in products_list %}
+                            <option value="{{ product }}">{{ product }}</option>
+                        {% else %}
+                        <option value="" disabled>Nenhum produto disponível</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                </div>
+
+            <div id="form-producer-products" class="recommendation-form-inputs">
+                <h5>Buscar Produtos de um Produtor</h5>
+                <div class="mb-3">
+                    <label for="pp-producer-select" class="form-label">Produtor (obrigatório):</label>
+                    <select id="pp-producer-select" class="form-select" onchange="updateLocationOptions('pp-producer-select', 'pp-location-select')">
+                        <option value="" disabled selected>Selecione um produtor</option>
+                        {% for producer in producers_list %}
+                            <option value="{{ producer }}">{{ producer }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                 <div class="mb-3">
+                    <label for="pp-location-select" class="form-label">Região Administrativa (opcional, máx 1):</label>
+                    <select id="pp-location-select" class="form-select">
+                        </select>
+                </div>
+                <div class="mb-3">
+                    <label for="pp-organic-select" class="form-label">Orgânico:</label>
+                    <select id="pp-organic-select" class="form-select">
+                        <option value="1">Sim</option>
+                        <option value="0" selected>Não</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary w-100 mt-3" onclick="getRecommendations()">Buscar Recomendações</button>
+            
+            <div id="results-section" class="mt-4">
+                <h4>Resultados:</h4>
+                <div id="recommendation-results">
+                    <p class="text-muted">Use os filtros acima e clique em "Buscar Recomendações".</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        let map; // Variável global para o objeto do mapa Leaflet
+        let userMarker; // Marcador da localização do usuário no mapa
+        let resultMarkers = []; // Array para armazenar marcadores dos resultados da recomendação
+        // `producersData` é injetado pelo Flask e contém a associação de produtores com suas RAs
+        const producersData = JSON.parse('{{ producers_ra_json | default("{}") | safe }}');
+
+        // Inicializa o mapa Leaflet
+        function initMap() {
+            const mapDiv = document.getElementById('map');
+            // Limpa o conteúdo da div do mapa se houver um mapa Folium anterior ou estiver vazio
+            if (mapDiv.innerHTML.includes('folium-map') || mapDiv.innerHTML.includes("")) { 
+                 mapDiv.innerHTML = '';
+            }
+
+            map = L.map('map').setView([-15.7942, -47.8822], 5); // Inicializa com visão em Brasília, zoom 5
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            // Tenta obter a geolocalização do navegador
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    const userLat = position.coords.latitude;
+                    const userLng = position.coords.longitude;
+                    map.setView([userLat, userLng], 13); // Centraliza o mapa na localização do usuário
+                    updateUserMarker([userLat, userLng], 'Sua Localização Atual');
+                }, error => {
+                    console.warn(`Erro ao obter geolocalização: ${error.message}`);
+                    fetchUserLocationByIP(); // Se falhar, tenta obter localização por IP
+                });
+            } else {
+                fetchUserLocationByIP(); // Se geolocalização não for suportada, tenta por IP
+            }
+
+            // Evento de clique no mapa para definir/atualizar a localização do usuário
+            map.on('click', e => {
+                updateUserMarker(e.latlng, 'Localização Selecionada');
+                map.setView(e.latlng);
+            });
+        }
+
+        // Busca a localização do usuário via IP chamando a rota /get_location no backend
+        function fetchUserLocationByIP() {
+            fetch('/get_location')
+                .then(response => response.json())
+                .then(data => {
+                    // Centraliza o mapa na localização obtida e ajusta o zoom
+                    map.setView([data.latitude, data.longitude], data.message && data.message.includes('Brasília') ? 10: 13);
+                    updateUserMarker([data.latitude, data.longitude], data.message || 'Localização Estimada por IP');
+                })
+                .catch(err => {
+                    console.error('Erro ao buscar localização por IP:', err);
+                    // Fallback para Brasília se a busca por IP falhar
+                    updateUserMarker([-15.7942, -47.8822], 'Localização Padrão (Brasília)');
+                });
+        }
+        
+        // Atualiza ou cria o marcador da localização do usuário no mapa
+        function updateUserMarker(latLng, popupText) {
+            // Garante que latLng seja um objeto L.LatLng ou um array [lat, lng]
+            const targetLatLng = latLng.lat && latLng.lng ? latLng : L.latLng(latLng[0], latLng[1]);
+            if (userMarker) {
+                userMarker.setLatLng(targetLatLng).setPopupContent(popupText).openPopup();
+            } else {
+                userMarker = L.marker(targetLatLng, { draggable: true }) // Marcador arrastável
+                    .addTo(map)
+                    .bindPopup(popupText)
+                    .openPopup();
+                addDragEndEventToUserMarker(); // Adiciona evento para quando o marcador é arrastado
+            }
+        }
+
+        // Adiciona evento de 'dragend' ao marcador do usuário para atualizar sua posição
+        function addDragEndEventToUserMarker() {
+            if (userMarker) {
+                userMarker.on('dragend', event => {
+                    const marker = event.target;
+                    const position = marker.getLatLng();
+                    marker.setPopupContent(`Localização ajustada: ${position.lat.toFixed(5)}, ${position.lng.toFixed(5)}`).openPopup();
+                    map.panTo(position); // Centraliza o mapa na nova posição do marcador
+                });
+            }
+        }
+        
+        // Atualiza as opções do select de Região Administrativa (RA) com base no produtor selecionado
+        function updateLocationOptions(producerSelectId, locationSelectId) {
+            const producerSelect = document.getElementById(producerSelectId);
+            const locationSelect = document.getElementById(locationSelectId);
+            const selectedProducer = producerSelect.value;
+            
+            locationSelect.innerHTML = '<option value="">Todas as Regiões</option>'; // Opção padrão
+            
+            const locationsToShow = new Set(); // Usar Set para evitar RAs duplicadas
+            // Se nenhum produtor específico for selecionado, mostra todas as RAs de todos os produtores
+            if (!selectedProducer || selectedProducer === "") { 
+                Object.values(producersData).forEach(producerLocations => {
+                    if (Array.isArray(producerLocations)) {
+                        producerLocations.forEach(location => locationsToShow.add(location));
+                    }
+                });
+            } else if (producersData && producersData[selectedProducer]) {
+                // Se um produtor for selecionado, mostra apenas as RAs associadas a ele
+                 if (Array.isArray(producersData[selectedProducer])) {
+                    producersData[selectedProducer].forEach(location => locationsToShow.add(location));
+                 }
+            }
+
+            // Popula o select de RAs com as opções filtradas e ordenadas
+            Array.from(locationsToShow).sort().forEach(location => {
+                const option = document.createElement('option');
+                option.value = location;
+                option.textContent = location;
+                locationSelect.appendChild(option);
+            });
+        }
+
+        // Controla a visibilidade dos diferentes formulários de filtro com base no tipo de recomendação selecionado
+        function updateFormVisibility() {
+            document.querySelectorAll('.recommendation-form-inputs').forEach(form => form.style.display = 'none');
+            const selectedType = document.getElementById('recommendation-type').value;
+            const formToShow = document.getElementById(`form-${selectedType}`);
+            if (formToShow) {
+                formToShow.style.display = 'block';
+            }
+            // Atualiza as opções de RA para os formulários relevantes quando a visibilidade muda
+            if (selectedType === 'products') {
+                updateLocationOptions('products-producer-select', 'products-location-select');
+            } else if (selectedType === 'producer-products') {
+                updateLocationOptions('pp-producer-select', 'pp-location-select');
+            }
+        }
+
+        // Envia a solicitação de recomendação para o backend
+        function getRecommendations() {
+            const resultsContainer = document.getElementById('recommendation-results');
+            // Verifica se a localização do usuário está definida no mapa
+            if (!userMarker) {
+                alert("Por favor, defina uma localização no mapa (clicando nele, permitindo sua localização atual ou aguardando a localização por IP).");
+                resultsContainer.innerHTML = '<div class="alert alert-warning">Localização do usuário não definida no mapa.</div>';
+                return;
+            }
+
+            const recType = document.getElementById('recommendation-type').value;
+            const userLat = userMarker.getLatLng().lat;
+            const userLng = userMarker.getLatLng().lng;
+            // Monta o payload (dados) a ser enviado para o backend
+            let payload = {
+                type: recType,
+                latitude: userLat,
+                longitude: userLng
+            };
+
+            // Adiciona filtros específicos ao payload com base no tipo de recomendação
+            if (recType === 'products') {
+                const selectedProducer = document.getElementById('products-producer-select').value;
+                const selectedLocation = document.getElementById('products-location-select').value;
+
+                // Validação: para "Melhores Produtos", um produtor ou RA deve ser selecionado
+                if (!selectedProducer && !selectedLocation) {
+                    alert("Para 'Melhores Produtos (por aqui)', por favor, selecione um produtor ou uma Região Administrativa.");
+                    resultsContainer.innerHTML = '<div class="alert alert-warning">Para "Melhores Produtos", por favor, selecione um produtor ou uma Região Administrativa.</div>'; 
+                    return;
+                }
+
+                const productCheckboxes = document.querySelectorAll('#form-products input[name="product_filter"]:checked');
+                payload.products = Array.from(productCheckboxes).map(cb => cb.value);
+                payload.producer = selectedProducer;
+                payload.locations = selectedLocation ? [selectedLocation] : []; 
+                payload.organic = document.getElementById('products-organic-select').value;
+            } else if (recType === 'producers') {
+                payload.single_product = document.getElementById('producers-single-product-select').value;
+                // A preferência por orgânicos não é enviada para 'producers' pois o backend não a utiliza no score tipo 1
+            } else if (recType === 'producer-products') {
+                payload.producer = document.getElementById('pp-producer-select').value;
+                // Validação: para "Produtos de um Produtor", o produtor é obrigatório
+                if (!payload.producer) {
+                    alert("Por favor, selecione um produtor para esta busca.");
+                    resultsContainer.innerHTML = '<div class="alert alert-warning">Selecione um produtor.</div>';
+                    return;
+                }
+                const locSelect = document.getElementById('pp-location-select');
+                payload.locations = locSelect.value ? [locSelect.value] : []; 
+                payload.organic = document.getElementById('pp-organic-select').value;
+            }
+            
+            resultsContainer.innerHTML = '<div class="alert alert-info">Buscando recomendações... <div class="spinner-border spinner-border-sm ms-2" role="status"><span class="visually-hidden">Loading...</span></div></div>';
+
+            // Faz a requisição POST para a rota /recommend do backend
+            fetch('/recommend', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    // Se a resposta não for OK, tenta extrair a mensagem de erro do JSON retornado pelo backend
+                    return response.json().then(errData => { 
+                        throw new Error(errData.error || `Erro HTTP: ${response.status}`);
+                    });
+                }
+                return response.json(); // Converte a resposta para JSON
+            })
+            .then(data => {
+                displayResults(data, recType); // Exibe os resultados na sidebar
+                plotResultsOnMap(data); // Plota os resultados no mapa
+            })
+            .catch(error => {
+                console.error("Erro ao buscar recomendações:", error);
+                resultsContainer.innerHTML = `<div class="alert alert-danger"><strong>Falha ao buscar recomendações:</strong> ${error.message}</div>`;
+            });
+        }
+
+        // Exibe os resultados da recomendação na sidebar
+        function displayResults(data, recType) {
+            const resultsContainer = document.getElementById('recommendation-results');
+            resultsContainer.innerHTML = ''; // Limpa resultados anteriores
+            
+            if (!data || data.length === 0) {
+                resultsContainer.innerHTML = '<div class="alert alert-warning">Nenhum resultado encontrado para os critérios informados. Tente ampliar sua busca!</div>';
+                return;
+            }
+            
+            const listGroup = document.createElement('div');
+            listGroup.className = 'list-group';
+
+            data.forEach((item, index) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'recommendation-item list-group-item';
+                
+                let title = '';
+                let details = '';
+                const organicText = item.organico == 1 ? 'Sim' : 'Não'; // Texto para status de orgânico
+
+                // Formata a exibição com base no tipo de recomendação
+                if (recType === 'products' || recType === 'producer-products') {
+                    title = item.produto || 'Produto Desconhecido';
+                    details = `
+                        <p class="mb-1"><strong>Produtor:</strong> ${item.nome_produtor || item.produtor || 'N/A'}</p>
+                        <p class="mb-1"><strong>Local:</strong> ${item.local || item.cidade || 'N/A'}</p>
+                        <p class="mb-1"><strong>Orgânico:</strong> ${organicText}</p>
+                        <p class="mb-1"><strong>Distância:</strong> ${typeof item.distancia_km === 'number' ? item.distancia_km.toFixed(1) + ' km' : (item.distancia_km || '? km')}</p>
+                        <small><strong>Avaliação:</strong> ${item.media_produtor_produto ? parseFloat(item.media_produtor_produto).toFixed(1) : '?'} / 5</small>
+                    `; 
+                } else if (recType === 'producers') {
+                    title = item.nome_produtor || 'Produtor Desconhecido';
+                     details = `
+                        <p class="mb-1"><strong>Local:</strong> ${item.local || item.cidade || 'N/A'}</p>
+                        <p class="mb-1"><strong>Distância:</strong> ${typeof item.distancia_km === 'number' ? item.distancia_km.toFixed(1) + ' km' : (item.distancia_km || '? km')}</p>
+                        <small><strong>Avaliação Média:</strong> ${item.media_avaliacao ? parseFloat(item.media_avaliacao).toFixed(1) : '?'} / 5</small>
+                    `;
+                }
+
+                itemDiv.innerHTML = `
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">${index + 1}. ${title}</h5>
+                    </div>
+                    ${details}
+                `;
+                listGroup.appendChild(itemDiv);
+            });
+            resultsContainer.appendChild(listGroup);
+        }
+        
+        // Plota os resultados da recomendação como marcadores no mapa
+        function plotResultsOnMap(data) {
+            // Remove marcadores de resultados anteriores
+            resultMarkers.forEach(marker => map.removeLayer(marker));
+            resultMarkers = [];
+            
+            if (!data || data.length === 0) return;
+
+            const bounds = L.latLngBounds(); // Cria um limite para ajustar o zoom do mapa
+
+            data.forEach(item => {
+                const lat = parseFloat(item.latitude);
+                const lon = parseFloat(item.longitude);
+
+                if (!isNaN(lat) && !isNaN(lon)) {
+                    const latLng = [lat, lon];
+                    const marker = L.marker(latLng)
+                        .addTo(map)
+                        .bindPopup(`<b>${item.produto || item.nome_produtor || 'Item'}</b><br>Produtor: ${item.nome_produtor || item.produtor || '-'}<br>Local: ${item.local || item.cidade || '-'}`);
+                    resultMarkers.push(marker);
+                    bounds.extend(latLng); // Estende os limites para incluir este marcador
+                } else {
+                    console.warn("Item com coordenadas inválidas ou ausentes:", item);
+                }
+            });
+
+            // Inclui o marcador do usuário nos limites para ajuste de zoom
+            if (userMarker) { 
+                bounds.extend(userMarker.getLatLng());
+            }
+
+            // Ajusta o zoom do mapa para mostrar todos os marcadores (resultados e usuário)
+            if (resultMarkers.length > 0 && bounds.isValid()) {
+                map.fitBounds(bounds, { padding: [50, 50] }); // Adiciona um padding para não cortar os marcadores
+            } else if (resultMarkers.length > 0) { // Caso apenas marcadores de resultado existam
+                 map.fitBounds(bounds, { padding: [50, 50] });
+            } else if (userMarker && bounds.isValid()) { // Caso apenas o marcador do usuário exista
+                map.setView(userMarker.getLatLng(), 13);
+            }
+        }
+        
+        // Evento disparado quando o DOM está completamente carregado
+        document.addEventListener('DOMContentLoaded', function() {
+            initMap(); // Inicializa o mapa
+            updateFormVisibility(); // Define a visibilidade inicial correta dos formulários de filtro
+            updateLocationOptions('products-producer-select', 'products-location-select'); // Popula inicialmente as RAs
+        });
+
+    </script>
+</body>
+</html>
