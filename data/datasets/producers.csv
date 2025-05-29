@@ -37,12 +37,12 @@ Quiabo,0,Asproc,Ceilândia,-15.8173391,-48.1045766
 Couve,1,Astraf,Guará,-15.8235629,-47.9768165
 Cebola,0,Aspaf,Guará,-15.8235629,-47.9768165
 Agrião,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
-Cenoura,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Cenoura,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Quiabo,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Alface,1,Prorural,Paranoá,-15.77544,-47.7797631
 Abacate,1,Asproc,Paranoá,-15.77544,-47.7797631
 Quiabo,1,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
-Abacate,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Abacate,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Atemóia,0,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Pitaia,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Atemóia,1,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
@@ -50,21 +50,21 @@ Tangerina,0,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Batata,1,Astraf,Guará,-15.8235629,-47.9768165
 Atemóia,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Agrião,0,Coopbrasil,Planaltina,-15.6181947,-47.6555703
-Maracujá,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Maracujá,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Uva,0,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Manga,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Cenoura,0,AsSpag,Brazlândia,-15.6808898,-48.1942621
-Uva,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Uva,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Mandioca,0,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Manga,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Banana,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Tangerina,0,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Batata,0,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
-Gengibre,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Gengibre,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Banana,0,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Limão,1,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Morango,1,Agrifam,Gama,-16.0170857,-48.0653054
-Lichia,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Lichia,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Pimentão,0,Asproc,Samambaia,-15.8769989,-48.0881004
 Abóbora,1,Asproc,Ceilândia,-15.8173391,-48.1045766
 Couve,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
@@ -90,19 +90,19 @@ Pimentão,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Chuchu,1,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Banana,1,Coopbrasil,Planaltina,-15.6181947,-47.6555703
 Banana,1,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
-Jiló,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Jiló,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Manga,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Cenoura,1,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
 Pitaia,0,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Alface,0,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Banana,1,Asphor,Gama,-16.0170857,-48.0653054
 Quiabo,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
-Limão,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Limão,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Abacate,0,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Graviola,0,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Pimentão,1,Prorural,Paranoá,-15.77544,-47.7797631
 Morango,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
-Batata,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Batata,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Brócolis,0,Agrifam,Gama,-16.0170857,-48.0653054
 Pitaia,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Pepino,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
@@ -113,13 +113,13 @@ Brócolis,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
 Batata,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Quiabo,0,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Gengibre,1,Coopbrasil,Planaltina,-15.6181947,-47.6555703
-Tangerina,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Tangerina,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Cebola,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Pimentão,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Pepino,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Mamão,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Morango,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
-Jiló,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Jiló,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Mamão,1,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
 Chuchu,0,Asproc,Paranoá,-15.77544,-47.7797631
 Lichia,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
@@ -152,11 +152,11 @@ Agrião,1,Coopbrasil,Gama,-16.0170857,-48.0653054
 Jiló,1,Asphor,Gama,-16.0170857,-48.0653054
 Tangerina,1,Prorural,Paranoá,-15.77544,-47.7797631
 Graviola,1,Coopbrasil,Planaltina,-15.6181947,-47.6555703
-Alface,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Alface,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Gengibre,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Mamão,0,Aspaf,Guará,-15.8235629,-47.9768165
 Jiló,0,Asphor,Santa Maria,-16.0171229,-48.0131328
-Quiabo,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Quiabo,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Jiló,0,Coopbrasil,Gama,-16.0170857,-48.0653054
 Brócolis,0,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Tangerina,1,Afeca,São Sebastião,-15.9033774,-47.7717736
@@ -180,7 +180,7 @@ Cenoura,0,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Brócolis,0,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Lichia,0,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Quiabo,1,Asproc,Ceilândia,-15.8173391,-48.1045766
-Batata,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Batata,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Goiaba,1,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Coco,0,Asphor,Santa Maria,-16.0171229,-48.0131328
 Maracujá,0,Coopebraz,Samambaia,-15.8769989,-48.0881004
@@ -220,7 +220,7 @@ Banana,1,Aspaf,Guará,-15.8235629,-47.9768165
 Brócolis,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Uva,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Graviola,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
-Abóbora,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Abóbora,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Uva,1,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Manga,1,Asproc,Paranoá,-15.77544,-47.7797631
 Uva,1,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
@@ -260,7 +260,7 @@ Pitaia,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
 Repolho,0,Prorural,Paranoá,-15.77544,-47.7797631
 Morango,0,Aspaf,Guará,-15.8235629,-47.9768165
 Pitaia,0,Rede Terra,Santa Maria,-16.0171229,-48.0131328
-Coco,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Coco,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Coco,1,Coopbrasil,Planaltina,-15.6181947,-47.6555703
 Uva,1,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Morango,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
@@ -291,7 +291,7 @@ Pitaia,0,Asproc,Paranoá,-15.77544,-47.7797631
 Agrião,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Pimentão,0,Coopbrasil,Samambaia,-15.8769989,-48.0881004
 Goiaba,0,Agrifam,Taguatinga,-15.8335277,-48.0565716
-Cebola,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Cebola,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Mandioca,0,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Maracujá,0,Coopbrasil,Planaltina,-15.6181947,-47.6555703
 Brócolis,1,Coopbrasil,Planaltina,-15.6181947,-47.6555703
@@ -316,15 +316,15 @@ Pepino,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Cajamanga,1,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Tangerina,1,Asproc,Planaltina,-15.6181947,-47.6555703
 Cebola,0,Asphor,Gama,-16.0170857,-48.0653054
-Goiaba,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
-Mamão,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Goiaba,0,Prorural,Plano Piloto,-15.79523,-47.88288
+Mamão,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Limão,0,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Berinjela,1,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Goiaba,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Mamão,1,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Atemóia,1,Asphor,Santa Maria,-16.0171229,-48.0131328
-Banana,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
-Pitaia,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Banana,1,Aspaf,Plano Piloto,-15.79523,-47.88288
+Pitaia,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Tomate,1,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Batata,1,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Jiló,0,Rede Terra,Santa Maria,-16.0171229,-48.0131328
@@ -338,11 +338,11 @@ Mandioca,0,Astraf,Guará,-15.8235629,-47.9768165
 Tomate,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Cebola,0,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Jiló,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
-Tangerina,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Tangerina,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Maracujá,0,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Banana,1,Asproc,Ceilândia,-15.8173391,-48.1045766
 Atemóia,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
-Uva,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Uva,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Coco,1,Amista,Santa Maria,-16.0171229,-48.0131328
 Couve,1,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Cajamanga,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
@@ -360,7 +360,7 @@ Cajamanga,0,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Alface,0,Afeca,São Sebastião,-15.9033774,-47.7717736
 Batata,0,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Abacate,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
-Pepino,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Pepino,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Lichia,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Lichia,1,Asproc,Samambaia,-15.8769989,-48.0881004
 Goiaba,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
@@ -379,12 +379,12 @@ Tangerina,0,Aspaf,Guará,-15.8235629,-47.9768165
 Repolho,0,Astraf,Guará,-15.8235629,-47.9768165
 Mandioca,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Mamão,1,Coopbrasil,Gama,-16.0170857,-48.0653054
-Alface,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Alface,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Manga,1,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Tomate,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Beterraba,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
 Lichia,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
-Banana,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Banana,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Mandioca,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Pimentão,1,Coopbrasil,Gama,-16.0170857,-48.0653054
 Quiabo,0,Asproc,Samambaia,-15.8769989,-48.0881004
@@ -397,16 +397,16 @@ Coco,0,Astraf,Guará,-15.8235629,-47.9768165
 Agrião,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Beterraba,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Tangerina,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
-Batata,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Batata,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Pepino,0,Astraf,Guará,-15.8235629,-47.9768165
-Morango,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Morango,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Quiabo,0,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Alface,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Mandioca,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Couve,1,Prorural,Paranoá,-15.77544,-47.7797631
 Banana,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Repolho,0,Asphor,Santa Maria,-16.0171229,-48.0131328
-Cenoura,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Cenoura,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Quiabo,0,Astraf,Guará,-15.8235629,-47.9768165
 Banana,0,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Tomate,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
@@ -431,9 +431,9 @@ Coco,1,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Atemóia,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Gengibre,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Berinjela,0,Asproc,Paranoá,-15.77544,-47.7797631
-Pimentão,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Pimentão,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Atemóia,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
-Manga,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Manga,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Mamão,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Couve,0,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
 Pepino,0,Coopebraz,Samambaia,-15.8769989,-48.0881004
@@ -448,7 +448,7 @@ Quiabo,0,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Mandioca,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Tomate,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Gengibre,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
-Mandioca,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Mandioca,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Gengibre,1,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Pitaia,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Couve,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
@@ -456,7 +456,7 @@ Cenoura,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Couve,1,Asproc,Samambaia,-15.8769989,-48.0881004
 Mamão,0,Asproc,Ceilândia,-15.8173391,-48.1045766
 Coco,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
-Berinjela,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Berinjela,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Pimentão,1,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
 Tangerina,1,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Pimentão,0,Aspaf,Guará,-15.8235629,-47.9768165
@@ -498,7 +498,7 @@ Maracujá,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Alface,1,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Manga,0,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Cenoura,1,Asphor,Santa Maria,-16.0171229,-48.0131328
-Tomate,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Tomate,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Uva,0,Asphor,Santa Maria,-16.0171229,-48.0131328
 Agrião,0,Afeca,São Sebastião,-15.9033774,-47.7717736
 Pepino,1,Coopbrasil,Gama,-16.0170857,-48.0653054
@@ -507,17 +507,17 @@ Limão,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Cenoura,1,Astraf,Guará,-15.8235629,-47.9768165
 Quiabo,0,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Goiaba,1,Amista,Santa Maria,-16.0171229,-48.0131328
-Gengibre,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Gengibre,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Beterraba,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Tomate,0,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Maracujá,1,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Banana,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Limão,0,Asphor,Gama,-16.0170857,-48.0653054
 Mamão,0,Coopbrasil,Gama,-16.0170857,-48.0653054
-Mandioca,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Mandioca,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Atemóia,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Mandioca,0,Coopbrasil,Samambaia,-15.8769989,-48.0881004
-Couve,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Couve,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Tomate,1,Astraf,Guará,-15.8235629,-47.9768165
 Morango,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Mamão,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
@@ -529,7 +529,7 @@ Limão,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Manga,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Tangerina,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Tangerina,0,Coopbrasil,Samambaia,-15.8769989,-48.0881004
-Pimentão,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Pimentão,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Uva,0,Aspaf,Guará,-15.8235629,-47.9768165
 Atemóia,0,Asphor,Santa Maria,-16.0171229,-48.0131328
 Beterraba,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
@@ -557,7 +557,7 @@ Manga,1,Asproc,Ceilândia,-15.8173391,-48.1045766
 Chuchu,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
 Gengibre,0,Asphor,Gama,-16.0170857,-48.0653054
 Abacate,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
-Graviola,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Graviola,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Quiabo,0,Agrifam,Gama,-16.0170857,-48.0653054
 Lichia,1,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Batata,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
@@ -571,7 +571,7 @@ Abóbora,0,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Atemóia,0,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Cebola,1,Afeca,São Sebastião,-15.9033774,-47.7717736
 Cenoura,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
-Graviola,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Graviola,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Cebola,1,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Beterraba,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Morango,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
@@ -580,7 +580,7 @@ Alface,0,Asproc,Paranoá,-15.77544,-47.7797631
 Graviola,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Atemóia,0,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Chuchu,1,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
-Lichia,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Lichia,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Alface,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Banana,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Cajamanga,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
@@ -590,7 +590,7 @@ Coco,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Gengibre,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Brócolis,1,Asproc,Planaltina,-15.6181947,-47.6555703
 Brócolis,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
-Beterraba,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Beterraba,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Pitaia,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Beterraba,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Tomate,1,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
@@ -604,7 +604,7 @@ Gengibre,1,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Morango,1,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Limão,1,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Pepino,1,Afeca,São Sebastião,-15.9033774,-47.7717736
-Uva,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Uva,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Banana,0,Amista,Santa Maria,-16.0171229,-48.0131328
 Morango,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Mandioca,0,Prorural,Paranoá,-15.77544,-47.7797631
@@ -627,7 +627,7 @@ Gengibre,1,Astraf,Guará,-15.8235629,-47.9768165
 Uva,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Atemóia,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Brócolis,0,Coopbrasil,Planaltina,-15.6181947,-47.6555703
-Coco,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Coco,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Atemóia,0,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Uva,0,Asproc,Paranoá,-15.77544,-47.7797631
 Banana,0,Coopbrasil,Gama,-16.0170857,-48.0653054
@@ -648,22 +648,22 @@ Graviola,0,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Atemóia,0,Afeca,São Sebastião,-15.9033774,-47.7717736
 Graviola,0,Prorural,Paranoá,-15.77544,-47.7797631
 Goiaba,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
-Abacate,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Abacate,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Mandioca,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
-Beterraba,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Beterraba,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Manga,0,Prorural,Paranoá,-15.77544,-47.7797631
 Maracujá,1,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Repolho,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Pimentão,0,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Agrião,0,Coopbrasil,Samambaia,-15.8769989,-48.0881004
-Cajamanga,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Cajamanga,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Morango,0,Asphor,Gama,-16.0170857,-48.0653054
 Brócolis,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Tomate,0,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
 Quiabo,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Abacate,1,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Pitaia,1,Asproc,Recanto das Emas,-15.9025481,-48.0607778
-Mandioca,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Mandioca,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Mandioca,1,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Repolho,0,Aspaf,Guará,-15.8235629,-47.9768165
 Batata,0,Coopbrasil,Samambaia,-15.8769989,-48.0881004
@@ -693,7 +693,7 @@ Abóbora,0,Coopbrasil,Planaltina,-15.6181947,-47.6555703
 Cajamanga,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Abóbora,0,Astraf,Guará,-15.8235629,-47.9768165
 Banana,0,Agrifam,Taguatinga,-15.8335277,-48.0565716
-Mandioca,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Mandioca,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Lichia,1,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Alface,1,Afeca,São Sebastião,-15.9033774,-47.7717736
 Graviola,1,Asproc,Recanto das Emas,-15.9025481,-48.0607778
@@ -713,10 +713,10 @@ Jiló,0,Aspaf,Guará,-15.8235629,-47.9768165
 Cenoura,1,Asproc,Samambaia,-15.8769989,-48.0881004
 Batata,1,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Banana,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
-Cenoura,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
-Mamão,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Cenoura,0,Asphor,Plano Piloto,-15.79523,-47.88288
+Mamão,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Tangerina,0,Afeca,São Sebastião,-15.9033774,-47.7717736
-Berinjela,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Berinjela,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Abóbora,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Gengibre,1,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Tomate,0,Prorural,Paranoá,-15.77544,-47.7797631
@@ -725,42 +725,42 @@ Chuchu,1,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Coco,1,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Cebola,1,Agrifam,Gama,-16.0170857,-48.0653054
 Cebola,0,Prorural,Paranoá,-15.77544,-47.7797631
-Jiló,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Jiló,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Lichia,1,Asproc,Ceilândia,-15.8173391,-48.1045766
 Cebola,1,Aspaf,Guará,-15.8235629,-47.9768165
 Pimentão,1,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
 Brócolis,0,Asphor,Gama,-16.0170857,-48.0653054
 Quiabo,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Uva,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
-Pitaia,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Pitaia,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Beterraba,1,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
 Mamão,1,Asproc,Samambaia,-15.8769989,-48.0881004
 Mandioca,0,Asphor,Gama,-16.0170857,-48.0653054
 Tomate,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Coco,1,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
-Coco,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Coco,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Pitaia,1,Asproc,Planaltina,-15.6181947,-47.6555703
 Graviola,0,Aspaf,Guará,-15.8235629,-47.9768165
 Quiabo,0,Asproc,Paranoá,-15.77544,-47.7797631
 Alface,1,Amista,Santa Maria,-16.0171229,-48.0131328
-Beterraba,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Beterraba,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Agrião,1,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Maracujá,0,Agrifam,Gama,-16.0170857,-48.0653054
 Coco,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Chuchu,0,Asproc,Ceilândia,-15.8173391,-48.1045766
 Limão,1,Afeca,São Sebastião,-15.9033774,-47.7717736
 Graviola,0,Cooper-mista,Planaltina,-15.6181947,-47.6555703
-Repolho,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
-Maracujá,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Repolho,0,Prorural,Plano Piloto,-15.79523,-47.88288
+Maracujá,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Abacate,0,Asphor,Santa Maria,-16.0171229,-48.0131328
 Couve,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Uva,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Uva,0,Amista,Santa Maria,-16.0171229,-48.0131328
 Goiaba,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
-Abacate,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Abacate,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Coco,0,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Tomate,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
-Pimentão,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Pimentão,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Pimentão,1,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Alface,0,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Coco,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
@@ -769,7 +769,7 @@ Brócolis,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Tomate,1,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Chuchu,1,Astraf,Guará,-15.8235629,-47.9768165
 Graviola,1,Asproc,Ceilândia,-15.8173391,-48.1045766
-Goiaba,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Goiaba,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Banana,0,Asproc,Paranoá,-15.77544,-47.7797631
 Abóbora,1,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Beterraba,1,Coopbrasil,Gama,-16.0170857,-48.0653054
@@ -790,7 +790,7 @@ Uva,1,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Chuchu,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Abacate,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Alface,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
-Limão,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Limão,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Morango,1,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Pitaia,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Cenoura,1,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
@@ -818,7 +818,7 @@ Jiló,0,Asphor,Gama,-16.0170857,-48.0653054
 Pitaia,0,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Agrião,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Maracujá,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
-Jiló,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Jiló,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Goiaba,0,Astraf,Guará,-15.8235629,-47.9768165
 Maracujá,0,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Agrião,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
@@ -835,7 +835,7 @@ Limão,0,Asphor,Santa Maria,-16.0171229,-48.0131328
 Limão,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Jiló,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
 Cenoura,0,Amista,Santa Maria,-16.0171229,-48.0131328
-Agrião,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Agrião,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Pitaia,0,Asproc,Samambaia,-15.8769989,-48.0881004
 Maracujá,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Abóbora,0,Prorural,Paranoá,-15.77544,-47.7797631
@@ -858,7 +858,7 @@ Uva,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Alface,0,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Pepino,1,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Uva,0,Coopbrasil,Planaltina,-15.6181947,-47.6555703
-Tangerina,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Tangerina,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Morango,1,Asproc,Paranoá,-15.77544,-47.7797631
 Tangerina,1,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Goiaba,0,Coopbrasil,Planaltina,-15.6181947,-47.6555703
@@ -866,7 +866,7 @@ Chuchu,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Mamão,0,Asproc,Paranoá,-15.77544,-47.7797631
 Tomate,0,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Pimentão,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
-Banana,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Banana,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Abóbora,1,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Cajamanga,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Alface,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
@@ -877,7 +877,7 @@ Goiaba,0,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
 Cajamanga,1,Asproc,Samambaia,-15.8769989,-48.0881004
 Couve,0,Coopbrasil,Gama,-16.0170857,-48.0653054
 Pitaia,1,Coopebraz,Samambaia,-15.8769989,-48.0881004
-Graviola,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Graviola,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Brócolis,0,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Graviola,1,Astraf,Guará,-15.8235629,-47.9768165
 Goiaba,0,Asphor,Santa Maria,-16.0171229,-48.0131328
@@ -894,8 +894,8 @@ Repolho,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Mamão,1,Asphor,Gama,-16.0170857,-48.0653054
 Abóbora,0,Coopbrasil,Gama,-16.0170857,-48.0653054
 Atemóia,1,Aspronte,Ceilândia,-15.8173391,-48.1045766
-Quiabo,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
-Abacate,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Quiabo,0,Aspaf,Plano Piloto,-15.79523,-47.88288
+Abacate,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Abóbora,1,Afeca,São Sebastião,-15.9033774,-47.7717736
 Lichia,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Lichia,0,Amista,Santa Maria,-16.0171229,-48.0131328
@@ -928,10 +928,10 @@ Maracujá,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Abacate,0,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
 Cenoura,0,Agrifam,Gama,-16.0170857,-48.0653054
 Repolho,0,Asproc,Paranoá,-15.77544,-47.7797631
-Pitaia,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Pitaia,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Berinjela,0,Astraf,Guará,-15.8235629,-47.9768165
 Repolho,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
-Limão,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Limão,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Tomate,1,Amista,Santa Maria,-16.0171229,-48.0131328
 Pepino,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Maracujá,1,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
@@ -940,7 +940,7 @@ Agrião,0,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Beterraba,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Pepino,1,Coopbrasil,Planaltina,-15.6181947,-47.6555703
 Maracujá,0,Coopbrasil,Samambaia,-15.8769989,-48.0881004
-Limão,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Limão,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Chuchu,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Batata,1,Coopbrasil,Gama,-16.0170857,-48.0653054
 Mamão,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
@@ -948,7 +948,7 @@ Pepino,1,Amista,Santa Maria,-16.0171229,-48.0131328
 Cebola,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Brócolis,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Cebola,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
-Alface,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Alface,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Cebola,1,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
 Atemóia,1,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Graviola,1,Afeca,São Sebastião,-15.9033774,-47.7717736
@@ -967,7 +967,7 @@ Tomate,1,Coopbrasil,Planaltina,-15.6181947,-47.6555703
 Jiló,0,Asproc,Ceilândia,-15.8173391,-48.1045766
 Abacate,0,Asproc,Paranoá,-15.77544,-47.7797631
 Uva,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
-Brócolis,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Brócolis,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Cenoura,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Jiló,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Mandioca,1,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
@@ -977,13 +977,13 @@ Manga,1,Asphor,Santa Maria,-16.0171229,-48.0131328
 Gengibre,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
 Tangerina,1,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Coco,0,Coopebraz,Samambaia,-15.8769989,-48.0881004
-Alface,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
-Mamão,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Alface,1,Asphor,Plano Piloto,-15.79523,-47.88288
+Mamão,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Quiabo,1,Aspaf,Guará,-15.8235629,-47.9768165
 Brócolis,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Repolho,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Tangerina,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
-Couve,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Couve,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Alface,0,Astraf,Guará,-15.8235629,-47.9768165
 Quiabo,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
 Repolho,0,Agrifam,Gama,-16.0170857,-48.0653054
@@ -1000,16 +1000,16 @@ Alface,0,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
 Beterraba,0,Asphor,Santa Maria,-16.0171229,-48.0131328
 Alface,1,Coopbrasil,Planaltina,-15.6181947,-47.6555703
 Abóbora,1,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
-Banana,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Banana,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Goiaba,0,Asproc,Planaltina,-15.6181947,-47.6555703
-Goiaba,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Goiaba,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Atemóia,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Abóbora,0,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Limão,1,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Uva,0,Astraf,Guará,-15.8235629,-47.9768165
 Atemóia,0,Amista,Santa Maria,-16.0171229,-48.0131328
 Tomate,0,Asphor,Santa Maria,-16.0171229,-48.0131328
-Cajamanga,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Cajamanga,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Goiaba,0,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Beterraba,1,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Cenoura,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
@@ -1023,7 +1023,7 @@ Tangerina,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Repolho,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Abóbora,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Cenoura,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
-Goiaba,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Goiaba,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Quiabo,1,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Limão,1,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Repolho,1,Rede Terra,Santa Maria,-16.0171229,-48.0131328
@@ -1037,10 +1037,10 @@ Uva,1,Asproc,Paranoá,-15.77544,-47.7797631
 Mandioca,1,Asproc,Ceilândia,-15.8173391,-48.1045766
 Gengibre,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Abacate,1,Agrifam,Gama,-16.0170857,-48.0653054
-Batata,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Batata,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Couve,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Beterraba,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
-Couve,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Couve,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Alface,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Pimentão,0,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Tangerina,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
@@ -1063,7 +1063,7 @@ Pitaia,0,Aspaf,Guará,-15.8235629,-47.9768165
 Pimentão,1,Amista,Santa Maria,-16.0171229,-48.0131328
 Tangerina,0,Coopebraz,Samambaia,-15.8769989,-48.0881004
 Limão,0,Astraf,Guará,-15.8235629,-47.9768165
-Tomate,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Tomate,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Quiabo,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
 Mamão,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Pitaia,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
@@ -1080,7 +1080,7 @@ Manga,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Tangerina,0,Amista,Santa Maria,-16.0171229,-48.0131328
 Pitaia,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Pitaia,1,Aspronte,Ceilândia,-15.8173391,-48.1045766
-Morango,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Morango,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Lichia,0,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Abacate,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Morango,0,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
@@ -1121,10 +1121,10 @@ Maracujá,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Alface,1,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Banana,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Maracujá,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
-Cebola,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Cebola,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Manga,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Tomate,1,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
-Pepino,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Pepino,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Limão,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Brócolis,1,Afeca,São Sebastião,-15.9033774,-47.7717736
 Beterraba,0,Agrifam,Taguatinga,-15.8335277,-48.0565716
@@ -1176,11 +1176,11 @@ Mamão,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Beterraba,1,Asproc,Paranoá,-15.77544,-47.7797631
 Cajamanga,1,Prorural,Paranoá,-15.77544,-47.7797631
 Manga,0,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
-Berinjela,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Berinjela,1,Aspaf,Plano Piloto,-15.79523,-47.88288
 Batata,0,Agrifam,Santa Maria,-16.0171229,-48.0131328
 Chuchu,1,Asproc,Recanto das Emas,-15.9025481,-48.0607778
 Atemóia,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
-Cajamanga,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Cajamanga,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Batata,1,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Beterraba,0,Coopbrasil,Gama,-16.0170857,-48.0653054
 Cenoura,1,Prorural,Paranoá,-15.77544,-47.7797631
@@ -1200,7 +1200,7 @@ Pitaia,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Coco,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Batata,0,Agrifam,Gama,-16.0170857,-48.0653054
 Uva,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
-Tomate,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Tomate,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Graviola,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
 Tomate,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Graviola,0,Asproc,Planaltina,-15.6181947,-47.6555703
@@ -1211,7 +1211,7 @@ Berinjela,1,Asproc,Planaltina,-15.6181947,-47.6555703
 Pitaia,0,Coopbrasil,Gama,-16.0170857,-48.0653054
 Jiló,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Jiló,0,Coopbrasil,Samambaia,-15.8769989,-48.0881004
-Agrião,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Agrião,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Agrião,0,Coopbrasil,Núcleo Bandeirante,-15.8711851,-47.9679941
 Atemóia,0,Asproc,Ceilândia,-15.8173391,-48.1045766
 Banana,1,Prorural,Paranoá,-15.77544,-47.7797631
@@ -1236,10 +1236,10 @@ Pitaia,1,Amista,Santa Maria,-16.0171229,-48.0131328
 Batata,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Coco,1,Prorural,Paranoá,-15.77544,-47.7797631
 Alface,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
-Lichia,0,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Lichia,0,Asphor,Plano Piloto,-15.79523,-47.88288
 Uva,1,Asproc,Ceilândia,-15.8173391,-48.1045766
 Cebola,0,Cooper-mista,Planaltina,-15.6181947,-47.6555703
-Pitaia,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Pitaia,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Morango,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Mamão,1,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Agrião,0,Aspaf,Guará,-15.8235629,-47.9768165
@@ -1247,7 +1247,7 @@ Mandioca,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
 Cenoura,1,Asproc,Planaltina,-15.6181947,-47.6555703
 Chuchu,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Banana,0,Coopebraz,Recanto das Emas,-15.9025481,-48.0607778
-Manga,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Manga,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Chuchu,1,Cootaquara,Ceilândia,-15.8173391,-48.1045766
 Mandioca,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
 Maracujá,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
@@ -1263,7 +1263,7 @@ Berinjela,0,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Pitaia,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Atemóia,1,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Cajamanga,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
-Beterraba,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Beterraba,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Maracujá,1,Amista,Santa Maria,-16.0171229,-48.0131328
 Graviola,1,Agrifam,Taguatinga,-15.8335277,-48.0565716
 Cajamanga,0,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
@@ -1271,7 +1271,7 @@ Pimentão,0,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Brócolis,1,Coopbrasil,Gama,-16.0170857,-48.0653054
 Morango,1,Astraf,Guará,-15.8235629,-47.9768165
 Pimentão,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
-Manga,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Manga,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Uva,1,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Pimentão,0,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Abacate,1,Asproc,Ceilândia,-15.8173391,-48.1045766
@@ -1284,8 +1284,8 @@ Mandioca,1,Coopbrasil,Gama,-16.0170857,-48.0653054
 Goiaba,1,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Maracujá,1,Coopbrasil,Gama,-16.0170857,-48.0653054
 Graviola,0,Asproc,Paranoá,-15.77544,-47.7797631
-Cajamanga,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
-Cebola,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Cajamanga,1,Asphor,Plano Piloto,-15.79523,-47.88288
+Cebola,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Gengibre,0,Prorural,Paranoá,-15.77544,-47.7797631
 Pimentão,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Morango,0,Coopbrasil,Planaltina,-15.6181947,-47.6555703
@@ -1301,7 +1301,7 @@ Couve,0,Afeca,São Sebastião,-15.9033774,-47.7717736
 Alface,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Atemóia,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Couve,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
-Manga,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Manga,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Pepino,0,Cooper-Horti,Paranoá,-15.77544,-47.7797631
 Batata,1,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Repolho,1,Coopbrasil,Recanto das Emas,-15.9025481,-48.0607778
@@ -1311,7 +1311,7 @@ Cenoura,1,AsSpag,Brazlândia,-15.6808898,-48.1942621
 Manga,1,Prorural,Paranoá,-15.77544,-47.7797631
 Jiló,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
 Tangerina,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
-Brócolis,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Brócolis,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Repolho,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Agrião,1,Prorural,Paranoá,-15.77544,-47.7797631
 Jiló,1,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
@@ -1351,9 +1351,9 @@ Gengibre,1,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
 Tomate,1,Agrifam,Gama,-16.0170857,-48.0653054
 Chuchu,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Pitaia,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
-Coco,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Coco,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Abacate,0,Cooperbrasília,São Sebastião,-15.9033774,-47.7717736
-Uva,1,Asphor,Plano Piloto,-15.7183687,-47.9950273
+Uva,1,Asphor,Plano Piloto,-15.79523,-47.88288
 Lichia,1,Coopbrasil,Samambaia,-15.8769989,-48.0881004
 Beterraba,0,Asproc,Samambaia,-15.8769989,-48.0881004
 Tangerina,1,Amista,Santa Maria,-16.0171229,-48.0131328
@@ -1364,7 +1364,7 @@ Maracujá,0,Astraf,Guará,-15.8235629,-47.9768165
 Lichia,1,Asproc,Planaltina,-15.6181947,-47.6555703
 Quiabo,0,Cooper-mista,Planaltina,-15.6181947,-47.6555703
 Alface,1,Coopbrasil,Brazlândia,-15.6808898,-48.1942621
-Abacate,0,Aspaf,Plano Piloto,-15.7183687,-47.9950273
+Abacate,0,Aspaf,Plano Piloto,-15.79523,-47.88288
 Mandioca,0,Amista,Santa Maria,-16.0171229,-48.0131328
 Abacate,0,Rede Terra,Santa Maria,-16.0171229,-48.0131328
 Chuchu,1,Cooper-mista,Planaltina,-15.6181947,-47.6555703
@@ -1373,13 +1373,13 @@ Manga,0,Asphor,Santa Maria,-16.0171229,-48.0131328
 Uva,1,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Manga,0,Aspronte,Recanto das Emas,-15.9025481,-48.0607778
 Beterraba,0,Coopebraz,Samambaia,-15.8769989,-48.0881004
-Morango,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
-Brócolis,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
-Abacate,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Morango,0,Prorural,Plano Piloto,-15.79523,-47.88288
+Brócolis,1,Aspaf,Plano Piloto,-15.79523,-47.88288
+Abacate,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Mandioca,0,Cooperbrasília,Sobradinho,-15.6500533,-47.7848449
 Tomate,1,Aspronte,Ceilândia,-15.8173391,-48.1045766
 Mandioca,0,Coopbrasil,Ceilândia,-15.8173391,-48.1045766
-Abóbora,0,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Abóbora,0,Prorural,Plano Piloto,-15.79523,-47.88288
 Couve,1,Coopebraz,Taguatinga,-15.8335277,-48.0565716
 Atemóia,1,Asphor,Gama,-16.0170857,-48.0653054
 Berinjela,0,Aspronte,Ceilândia,-15.8173391,-48.1045766
@@ -1391,8 +1391,8 @@ Batata,0,Aspaf,Guará,-15.8235629,-47.9768165
 Uva,1,Coopebraz,Brazlândia,-15.6808898,-48.1942621
 Abacate,1,Aspaf,Núcleo Bandeirante,-15.8711851,-47.9679941
 Tangerina,0,Asproc,Ceilândia,-15.8173391,-48.1045766
-Goiaba,1,Aspaf,Plano Piloto,-15.7183687,-47.9950273
-Limão,1,Prorural,Plano Piloto,-15.7183687,-47.9950273
+Goiaba,1,Aspaf,Plano Piloto,-15.79523,-47.88288
+Limão,1,Prorural,Plano Piloto,-15.79523,-47.88288
 Atemóia,0,Asproc,Planaltina,-15.6181947,-47.6555703
 Batata,1,Asphor,Santa Maria,-16.0171229,-48.0131328
 Manga,0,Coopbrasil,Planaltina,-15.6181947,-47.6555703
