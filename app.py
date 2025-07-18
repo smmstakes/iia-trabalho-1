@@ -21,12 +21,14 @@ try:
     # Disponibiliza resources para o módulo recommender, se ainda não estiver carregado lá
     if recommender.resources is None:
         recommender.resources = resources
+
 except FileNotFoundError:
     print("Erro ao carregar recursos. Verifique os caminhos dos arquivos: ./data/model/full_resources.pkl ou ./data/datasets/df_full_reviews.parquet")
     resources = {'products_list': [], 'producers_formatted': []} 
     df_full_reviews = pd.DataFrame()
     if recommender.df_full_reviews is None: recommender.df_full_reviews = pd.DataFrame()
     if recommender.resources is None: recommender.resources = {}
+    
 except Exception as e:
     print(f"Erro ao carregar recursos: {e}")
     resources = {'products_list': [], 'producers_formatted': []}
